@@ -4,14 +4,14 @@
   "description": "A Mini App to mint your Proof-of-Attendance NFT on Base.",
   "frames": [
     {
-      "frameUrl": "https://your-vercel-project-url.vercel.app",
+      "frameUrl": "https://poa-frontend-liard.vercel.app",
       "frameVersion": "vNext",
-      "imageUrl": "https://your-vercel-project-url.vercel.app/frame.png",
+      "imageUrl": "https://poa-frontend-liard.vercel.app/frame.png",
       "buttons": [
         {
           "label": "Mint Your Proof-of-Attendance NFT",
           "action": "link",
-          "target": "https://your-vercel-project-url.vercel.app"
+          "target": "https://poa-frontend-liard.vercel.app"
         }
       ]
     }
