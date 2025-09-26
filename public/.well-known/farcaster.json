@@ -3,13 +3,11 @@
   "name": "StanleyPOA Minter",
   "iconUrl": "https://poa-frontend-liard.vercel.app/icon.png",
   "homeUrl": "https://poa-frontend-liard.vercel.app",
-  "splashUrl": "https://poa-frontend-liard.vercel.app/splash.png",
-  "frame": {
-    "imageUrl": "https://poa-frontend-liard.vercel.app/frame.png",
-    "buttonTitle": "Mint Your Proof-of-Attendance NFT",
-    "postUrl": "https://poa-frontend-liard.vercel.app",
-    "action": "link"
-  },
+  "splashImageUrl": "https://poa-frontend-liard.vercel.app/splash.png",
+  "imageUrl": "https://poa-frontend-liard.vercel.app/frame.png",
+  "buttonTitle": "Mint Your POA NFT",
+  "postUrl": "https://poa-frontend-liard.vercel.app",
+  "action": "link",
   "accountAssociation": {
     "header": "eyJmaWQiOjU5MzEyMiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDkyQUNENjc5QmI5YjlCODM0NjgzRDQ4MjU5OTQ5YzIyYkFBZTdhNDcifQ",
     "payload": "eyJkb21haW4iOiJwb2EtZnJvbnRlbmQtbGlhcmQudmVyY2VsLmFwcCJ9",
