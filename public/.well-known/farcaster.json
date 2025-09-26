@@ -1,16 +1,20 @@
 {
-  "version": "1.0.0",
-  "name": "StanleyPOA Minter",
-  "iconUrl": "https://poa-frontend-liard.vercel.app/icon.png",
-  "homeUrl": "https://poa-frontend-liard.vercel.app",
-  "splashImageUrl": "https://poa-frontend-liard.vercel.app/splash.png",
-  "imageUrl": "https://poa-frontend-liard.vercel.app/frame.png",
-  "buttonTitle": "Mint Your POA NFT",
-  "postUrl": "https://poa-frontend-liard.vercel.app",
-  "action": "link",
   "accountAssociation": {
     "header": "eyJmaWQiOjU5MzEyMiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDkyQUNENjc5QmI5YjlCODM0NjgzRDQ4MjU5OTQ5YzIyYkFBZTdhNDcifQ",
     "payload": "eyJkb21haW4iOiJwb2EtZnJvbnRlbmQtbGlhcmQudmVyY2VsLmFwcCJ9",
     "signature": "MHgwZjNhNjdiZmVhNjg4ZWRkNDkyZjcyYWUyYjUxYzdiYWNhYzlkMWE4ZjdlYTI3MTAwNTgxYjJjYTQ1NGIzYWJkNWNiMjEzNTVlNDYzYzFiY2Q2YmEwNWQzMmM2YjgzZmVlNjY5ZjY2YzMyMTBmOWQwNTVmZGY5N2M2MjVkNzczNzFi"
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "StanleyPOA Minter",
+    "iconUrl": "https://poa-frontend-liard.vercel.app/icon.png",
+    "homeUrl": "https://poa-frontend-liard.vercel.app",
+    "imageUrl": "https://poa-frontend-liard.vercel.app/frame.png",
+    "buttonTitle": "Mint Your POA NFT",
+    "splashImageUrl": "https://poa-frontend-liard.vercel.app/splash.png",
+    "splashBackgroundColor": "#1e40af",
+    "subtitle": "Mint your Proof-of-Attendance NFT",
+    "description": "A Mini App to mint your Proof-of-Attendance NFT on Base Sepolia testnet.",
+    "primaryCategory": "utility"
   }
 }
