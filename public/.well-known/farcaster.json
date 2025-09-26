@@ -13,7 +13,7 @@
     "buttonTitle": "Mint Your POA NFT",
     "splashImageUrl": "https://poa-frontend-liard.vercel.app/splash.png",
     "splashBackgroundColor": "#1e40af",
-    "subtitle": "Mint your Proof-of-Attendance NFT",
+    "subtitle": "Mint your POA NFT on Base",
     "description": "A Mini App to mint your Proof-of-Attendance NFT on Base Sepolia testnet.",
     "primaryCategory": "utility"
   }
