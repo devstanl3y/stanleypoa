@@ -7,14 +7,14 @@
   "miniapp": {
     "version": "1",
     "name": "StanleyPOA Minter",
-    "iconUrl": "https://poa-frontend-liard.vercel.app/icon.png",
-    "homeUrl": "https://poa-frontend-liard.vercel.app",
-    "imageUrl": "https://poa-frontend-liard.vercel.app/frame.png",
+    "iconUrl": "https://base-poa.vercel.app/icon.png",
+    "homeUrl": "https://base-poa.vercel.app/",
+    "imageUrl": "https://base-poa.vercel.app/frame.png",
     "buttonTitle": "Mint Your POA NFT",
-    "splashImageUrl": "https://poa-frontend-liard.vercel.app/splash.png",
+    "splashImageUrl": "https://base-poa.vercel.app/splash.png",
     "splashBackgroundColor": "#1e40af",
     "subtitle": "Mint your POA NFT on Base",
-    "description": "A Mini App to mint your Proof-of-Attendance NFT on Base Sepolia testnet.",
+    "description": "This Mini App leverages the full power of Base, including the EIP-5792 standard, Smart Wallets, and the Paymaster to deliver a truly seamless, one-click, gasless mint.",
     "primaryCategory": "utility"
   }
 }
