@@ -65,8 +65,8 @@ export function MintingSection() {
     }
   }, [error, refetchHasMinted]);
   
-  const isConnectedWithSmartWallet = account.isConnected && account.connector?.id === 'coinbaseWallet';
-  const isConnectedWithStandardWallet = account.isConnected && account.connector?.id !== 'coinbaseWallet';
+  const isConnectedWithSmartWallet = account.isConnected && (account.connector?.id === 'coinbaseWallet' || account.connector?.id === 'coinbaseWalletSDK');
+  const isConnectedWithStandardWallet = account.isConnected && (account.connector?.id !== 'coinbaseWallet' && account.connector?.id !== 'coinbaseWalletSDK');
 
   const handleStandardMint = () => {
     setMintError(null);
@@ -135,11 +135,6 @@ export function MintingSection() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-green-500/20">
-            <svg className="w-8 h-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
           <h2 className="text-2xl font-semibold text-green-400 mb-2">Mint Successful!</h2>
           <p className="text-gray-400">This wallet has already claimed its POA.</p>
         </motion.div>
@@ -148,7 +143,15 @@ export function MintingSection() {
 
     if (isConnectedWithSmartWallet) {
       return (
-        <Transaction calls={calls} onSuccess={() => refetchHasMinted()}>
+        <Transaction
+          calls={calls}
+          capabilities={{
+            paymasterService: {
+              url: process.env.NEXT_PUBLIC_MAINNET_PAYMASTER_URL!,
+            },
+          }}
+          onSuccess={() => refetchHasMinted()}
+        >
           <TransactionButton
             text="Mint + Get Bonus (1-Click)"
             className="group relative w-full px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-green-600 to-green-700 rounded-xl shadow-lg transition-all duration-300 hover:from-green-500 hover:to-green-600 hover:shadow-xl hover:shadow-green-500/40 hover:scale-[1.02] hover:-translate-y-1"
@@ -166,7 +169,6 @@ export function MintingSection() {
           whileHover={!isPending && !isConfirming ? { scale: 1.02, y: -2 } : {}}
           whileTap={!isPending && !isConfirming ? { scale: 0.98 } : {}}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
           <span className="relative flex items-center justify-center gap-2">
             {(isPending || isConfirming) && (
               <div className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent"></div>
@@ -198,15 +200,7 @@ export function MintingSection() {
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
             <div className="text-center mb-8">
-              <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.2, duration: 0.6 }}
-                className="relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 blur-2xl opacity-50"></div>
-                <h2 className="relative font-mono text-3xl font-bold text-white mb-4">Get Your POA</h2>
-              </motion.div>
+              <h2 className="relative font-mono text-3xl font-bold text-white mb-4">Get Your POA</h2>
               <p className="text-gray-400 leading-relaxed">
                 Connect with a <span className="font-semibold text-blue-400">Coinbase Smart Wallet</span> for a gasless experience, or use a standard wallet and pay for gas.
               </p>
@@ -215,16 +209,10 @@ export function MintingSection() {
             {account.isConnected && (
               <motion.div 
                 className="bg-gradient-to-r from-black/20 via-gray-900/20 to-black/20 p-6 rounded-2xl mb-8 border border-white/10 backdrop-blur-sm"
-                initial={{ scale: 0.95, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
               >
                 <Identity address={account.address as Address} schemaId="0xf8b05c79f090979bf4a80270aba232dff11a10d9ca55c4f88de95317eff0a775">
                   <div className="flex items-center gap-4">
-                    <div className="relative">
-                      <Avatar />
-                      <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-gray-900"></div>
-                    </div>
+                    <Avatar />
                     <div className="text-left flex-1">
                       <Name className="font-bold text-sm text-white mb-1" />
                       <p className="text-xs text-gray-400 break-all font-mono">{account.address}</p>
