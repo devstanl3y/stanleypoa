@@ -1,9 +1,9 @@
 {
   "accountAssociation": {
     "header": "eyJmaWQiOjU5MzEyMiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDkyQUNENjc5QmI5YjlCODM0NjgzRDQ4MjU5OTQ5YzIyYkFBZTdhNDcifQ",
-    "payload": "eyJkb21haW4iOiJwb2EtZnJvbnRlbmQtbGlhcmQudmVyY2VsLmFwcCJ9",
-    "signature": "MHgwZjNhNjdiZmVhNjg4ZWRkNDkyZjcyYWUyYjUxYzdiYWNhYzlkMWE4ZjdlYTI3MTAwNTgxYjJjYTQ1NGIzYWJkNWNiMjEzNTVlNDYzYzFiY2Q2YmEwNWQzMmM2YjgzZmVlNjY5ZjY2YzMyMTBmOWQwNTVmZGY5N2M2MjVkNzczNzFi"
-  },
+    "payload": "eyJkb21haW4iOiJiYXNlLXBvYS52ZXJjZWwuYXBwIn0",
+    "signature": "MHg1NDU4NWRjOTI2ZDRkNjYwMWEzMDQ4NmVhNDM4M2U4MTMzYzQ5ZjM1OThmNDQ4ZTRlNTZkOWU2MmY1OGE0OTI2NDAwODhjZjMzZjFlYWQyZTI0YmQzODVhZTRjOWMzODg4ZDY1N2I1NDQ1YTE0NDVjMDdkNWRjMWU3NGQ2MTY5ZTFi"
+},
   "miniapp": {
     "version": "1",
     "name": "StanleyPOA Minter",
