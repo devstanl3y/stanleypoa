@@ -122,12 +122,11 @@ NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_walletconnect_id
 NEXT_PUBLIC_SITE_URL=https://your-deployed-site.com
 ```
 
-👨‍💻 Built By
+## 👨‍💻 Built By
 
-This project was built by DevStanley.
+This project was built by **DevStanley**.
 
-GitHub: github.com/devstanl3y
+- GitHub: [github.com/devstanl3y](https://github.com/devstanl3y)  
+- X (Twitter): [@Devstanley1](https://x.com/Devstanley1)  
+- Website: [devstanley.com](https://devstanley.com)
 
-X (Twitter): @Devstanley1
-
-Website: devstanley.com
