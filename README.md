@@ -11,7 +11,7 @@ This Mini App leverages the full power of Base, including **EIP-5792** standard 
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### 1. Gasless Transactions (Paymaster)
 Leveraging the **Coinbase Paymaster**, this application sponsors all transaction fees for users who connect with a Coinbase Smart Wallet.  
@@ -41,7 +41,7 @@ Secure, gas-efficient **ERC-1155 smart contract** built with Foundry, featuring:
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Smart Contract (Backend)
 - Language: **Solidity**
@@ -60,7 +60,7 @@ Secure, gas-efficient **ERC-1155 smart contract** built with Foundry, featuring:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To run this project locally, you will need two separate terminal windows: one for the **smart contract** and one for the **frontend**.
 
@@ -128,5 +128,5 @@ This project was built by **DevStanley**.
 
 - GitHub: [github.com/devstanl3y](https://github.com/devstanl3y)  
 - X (Twitter): [@Devstanley1](https://x.com/Devstanley1)  
-- Website: [devstanley.com](https://devstanley.com)
+- Website: [stanleyjinadu.dev](https://stanleyjinadu.dev)
 
